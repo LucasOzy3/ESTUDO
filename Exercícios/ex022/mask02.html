@@ -7,11 +7,12 @@
     <style>
 #container{
    
-    background:black url(imagens/Legal.png) no-repeat center center fixed;
+    background-image:  url(imagens/Legal.png) ;
     background-size: 100% 100%;
     height: 96vh;
     position: relative;
     padding: 10px;
+    background-color: black;
    
 
 }
@@ -19,7 +20,7 @@
 
 #container2{
    
-
+    
     background-image: url(imagens/pao.png);
     background-repeat: no-repeat;
     background-position: center center;
@@ -27,23 +28,36 @@
     position: absolute;
     height: 750px;
     width: 1500px;
-    
+    background-color: rgba(238, 238, 238, 0);
     left: 50%;
-    top: 50%
+    top: 50%;
+
+    transform: translate (-45%, -30%);
     
 
 
 
 }
+section#container2>a::after { background-color: rgba(209, 14, 14, 0.055);}
 
+section#container2:hover { 
+    background-color: rgba(0, 0, 2, 0.651);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+a::after {
+    background-color: rgba(0, 0, 2, 0.651);}
 
     </style>
 </head>
 <body>
     <section id="container">
-        <article id="container2">
-
-        </article>
+        <a href="" target="_blank">
+            <article  id= "container2">
+           
+            </article>
+        </a>
 
     </section>
 </body>
