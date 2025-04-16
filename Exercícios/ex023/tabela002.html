@@ -11,7 +11,16 @@ body{
 }
 
 table {
-    width: 400px;
+    width: 500px;
+    border-collapse: ;
+}
+
+caption { 
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px;
+    background-color: lightslategray;
+    
 }
 tr, th, td{
     border: 1px solid black;
@@ -33,6 +42,7 @@ td.num{
 
     <!--ANATOMIA DE TABELAS GRANDES (e SEMÂNTICAS)
     TABLE
+        CAPTION (NOME ou LEGENDA DA TABELA)
         THEAD
             TR, TD TH (POSSO TER DENTRO )
         TBODY
@@ -43,9 +53,10 @@ td.num{
 
         <table>
             <thead>
+                <caption>População dos Estados Brasileiros</caption>
                 <tr>
-                    <th>Estado</th>
-                    <th>População</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col" style="width: 100px;">População</th>
                 </tr>
             </thead>
             <tbody>
@@ -172,7 +183,7 @@ td.num{
             </tbody>
             <tfoot>
                 <tr>
-                    <th>
+                    <th scope="row">
                         Total de Habitantes
                     </th>
                     
