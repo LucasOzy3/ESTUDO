@@ -12,7 +12,7 @@ body{
 
 table {
     width: 500px;
-    border-collapse: ;
+    border-collapse:collapse ;
 }
 
 caption { 
@@ -30,6 +30,17 @@ tr, th, td{
 thead, tfoot { 
     background-color: gray;
     color: white;
+}
+
+tbody > tr:nth-child(odd) {
+    background-color: white;
+    font-weight: bold;
+}
+
+tbody > tr:nth-child(even) { 
+
+    background-color:lightgray;
+
 }
 
 td.num{
