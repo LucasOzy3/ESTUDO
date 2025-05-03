@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo Iframe</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+h1 {border: normal 1px solid #000;}
+
+ul{
+    text-align: justify;
+    text-overflow: clip;
+}
+ul li a {
+    text-decoration: none;
+}
+
+iframe {
+    width: 60vh;
+    height: 50vw;
+    border: 2px solid #000;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+div>p{
+    background-color: #831515;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+    </style>
+</head>
+<body>
+ <h1>Navegando pelo Iframe</h1>  
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, ut. Quis numquam cum, architecto magnam totam dolorem possimus ipsa voluptatibus labore, earum velit ut repellendus iusto a iste tenetur nisi.</p>
+    
+    <ul>
+        <li><a href="pag001.html" target="frame">Primeira página</a></li>
+        <li><a href="iframe002.html" target="frame">Segunda página</a></li>
+        <li><a href="#">Terceira página</a></li>
+    </ul>
+    <iframe name="frame" src="#" frameborder="0">
+        <p>Infelizmente essa página não pode ser exibida em seu navegador</p>
+    </iframe>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum eum sunt veniam, iste beatae omnis repellendus libero ad aut ducimus saepe molestiae maiores laudantium eos voluptatum minima. Ipsum, in similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum inventore sit quasi temporibus impedit pariatur tempore, suscipit, culpa esse, sapiente ratione rerum recusandae facilis consequatur explicabo itaque magni eius! Earum!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo minus, dolorum necessitatibus quasi dolor maiores ratione provident natus quod odit aperiam vitae eligendi eaque sit obcaecati deserunt quae impedit velit.</p>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ipsa magnam, fuga deleniti reprehenderit harum. Ipsam reprehenderit quae debitis adipisci eaque voluptatum, esse iusto animi autem, consequuntur laudantium rem non?</p>
+    </div>
+
+</body>
+</html>
