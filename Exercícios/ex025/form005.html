@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+</head>
+<body>
+   <h1>
+    formulário
+   </h1>
+   <form action="cadastro.php" method="post" autocomplete="on">
+    <fieldset>
+        <legend>Coisas</legend>
+        <p>Festa <label for="isapo"></label>
+        <input type="text" name="sapo" id="isapo"></p>
+        <input type="checkbox" name="bol" id="bol"><label for="bol">Bolo</label>
+        <input type="checkbox" name="ref" id="ref"><label for="ref">Refrigerante</label>
+        <input type="checkbox" name="" id="">Salgadinho <br> 
+        <input type="checkbox" name="" id="">Docinho
+        <!--Bolo Refrigerante estão marcando se clicar na palavra, ou outros dois somente se clicar na caixinha-->
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar"></p>
+    </fieldset>
+    <fieldset>
+        <legend>Sexo</legend>
+        <p>
+            <input type="radio" name="sexo" id="isxmas"> <label for="isxmas">Masculino</label>
+            <input type="radio" name="sexo" id="isxfem"> <label for="isxfem">Feminino</label>
+        </p>
+    </fieldset>
+   </form> 
+</body>
+</html>
