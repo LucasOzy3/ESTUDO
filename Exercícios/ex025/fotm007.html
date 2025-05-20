@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-be">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+<h1>Exemplo de formulário</h1>
+<form action="cadastro.php" method="post" autocomplete="on"> 
+    <p>
+        <label for="icon">Comidas</label>
+        <select name="comidas" id="icon">
+            <option value="" selected>----Escolha uma opção----</option>
+            <optgroup label="Salgados Sólidos">
+                <option value="cx">Coxinha</option>
+                <option value="pl">Pastel</option>
+                <option value="hb">Hamburguer</option>
+                <option value="pizz">Pizza</option>
+                <!--criado grupo dos salgados-->
+            </optgroup>
+            <optgroup label="Salgados Líquidos">
+                <option value="sushi">Sushi</option>
+                <option value="sp">Sopa</option>
+                <option value="cj">Canja</option>
+                <option value="cd">Caldinho</option>
+            </optgroup>
+
+
+        </select>
+    </p>
+    <p>
+        <label for="ibeb">Bebidas</label>
+        <input type="text" name="beb" id="ibeb" list="listbeb">
+        <datalist id="listbeb">
+            
+            <option value="REFRI">Refriferante</option>
+            <option value="SUC">Suco</option>
+            <option value="ÁGUA">Agua</option>
+            <option value="REF">Refresco </option>
+            <option value="VIT">Vitamina</option>
+
+           
+        </datalist>
+    </p>
+    <p>
+        <label for="isug">Sugetão</label><br>
+        <textarea name="sug" id="isug" cols="30" rows="10"></textarea>
+    </p>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+</form> 
+</body>
+</html>
