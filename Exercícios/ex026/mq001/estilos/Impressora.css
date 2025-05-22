@@ -1,0 +1,25 @@
+@carset "UTF-8";
+    
+/* ESTILO PARA IMPRESSÃO - Mídia Query impressão */ 
+ 
+* {
+    margin: 10px;
+    padding: 10px;
+
+}
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    line-height: 1em;
+}
+
+menu {
+    display: none;
+}
+
+article::after {
+    content: 'Esse arquivo é originário do site do curso em vídeo: www.cursoemvideo.com';
+}
+footer {
+    display: none;
+}
