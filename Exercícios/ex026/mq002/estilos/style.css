@@ -1,2 +1,23 @@
 @charset "UTF-8";           
 /* /* Estilo para todas configurações de tela */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+html, body {
+    
+    font-size: 1.3em;
+    background-size: contain;
+  
+   
+}
+h1 {
+    background-color: rgb(216, 211, 211);
+    color: #000;
+    padding: 10px;
+    text-shadow: 2px 2px 5px rgba(196, 7, 7, 0.644);
+    padding: 10px;
+}
