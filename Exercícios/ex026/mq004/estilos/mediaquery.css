@@ -2,6 +2,64 @@
 
 /*Todas as demais midias*/
 
+/*Como a regra é mobile first, as regras abaixo serão aplicadas a todas as telas, exceto as que forem sobrescritas pelas regras de media query, que no caso Celulares e telas pequenas*/
+
 @media print {
+    body, h1{
+        font-family: 'Courier New', Courier, monospace;
+        background-image: url(../imagens/back-print.jpg); /*Desnecessário porque não será impresso o background*/
+        background-color: white; /*Para garantir que o fundo seja branco na impressão*/
+        background-size: cover;
+        background-position: center center;
+        text-shadow: none;
+        color: black;
+main{
+    border: 2px solid black; /*Para destacar o conteúdo impresso*/
+}
+    }
+        img#phone {display: none;}
+        img#tablet {display: none;}
+        img#pc {display: none;}
+        img#tv {display: none;}
+        img#print {display: block;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /*Tablet*/
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+
+    }
+   img#phone {display: none;}
+    img#tablet {display: block;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+    img#print {display: none;}
     
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) { /*Descktop*/
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+        img#phone {display: none;}
+        img#tablet {display: none;}
+        img#pc {display: block;}
+        img#tv {display: none;}
+        img#print {display: none;}
+}
+
+@media screen and (min-width: 1201px) { /*Telas Grandes*/
+    body { 
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main{
+        width: 700px;
+    }
+        img#phone {display: none;}
+        img#tablet {display: none;}
+        img#pc {display: none;}
+        img#tv {display: block;}
+        img#print {display: none;}
 }
