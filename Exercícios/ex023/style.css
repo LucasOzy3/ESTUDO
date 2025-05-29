@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    img#phone {display: none;}
+    img#tablet {display: block;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+    img#print {display: none;}
+    
+}
