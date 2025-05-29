@@ -5,17 +5,18 @@
             margin: 0;
             padding: 0;
         }
-        nav {
-            background-color: #333;
-            padding: 10px;
-        }
-        nav a {
+        
+        
+        main > menu > ul > li > a {
             color: white;
             text-decoration: none;
             padding: 10px 15px;
             margin-right: 10px;
         }
-        nav a:hover {
+        menu{
+            display: block;
+        }
+        a:hover {
             background-color: #555;
         }
         section {
