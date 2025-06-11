@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+table {
+    width: 500px;
+    border-collapse:collapse ;
+    position: relative;
+}
+
+
+
+caption { 
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px;
+    background-color: lightslategray;
+    
+}
+tr, th, td{
+    border: 1px solid black;
+    padding: 8px;
+}
+
+thead, tfoot { 
+    background-color: gray;
+    color: white;
+}
+
+tbody > tr > th { 
+
+    position: sticky;
+    top: -1px;
+    background-color: gray;
+}
+
+tbody > tr:nth-child(odd) {
+    background-color: white;
+    font-weight: bold;
+}
+
+tbody > tr:nth-child(even) { 
+
+    background-color:lightgray;
+
+}
+
+td.num{
+    text-align: right;
+}
+    </style>
+    
+</head>
+<body>
+    <table>
+        <caption>Tabela doida</caption>
+        <tr>
+            <th colspan="colgroup">Chuva de verão</th>
+            <td>Materia</td>
+            <td>Dados</td>
+        </tr>
+        <tr>
+            <td rowspan="5">Janeiro</td>
+            <td colspan="10" style="text-align: center;">Chuva</td>
+            <td>Dados</td>
+        </tr>
+        <tr>
+            <td>noite</td>
+            <td>Dados</td>
+    </table>
+</body>
+</html>
