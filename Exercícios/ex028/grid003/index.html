@@ -8,18 +8,21 @@
         div.container {
             border: 3px solid rgb(26, 8, 129);
             display: grid;
-           /* grid-template-rows: 100px 100px 100px;
-            grid-template-columns: auto auto auto; (Simplificação com shorthand)*/
-            grid-template: /*100px 100px 100px*/ repeat(3, 100px) / /* auto auto auto */ repeat(3,auto);
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 5fr 1fr; 
+            grid-auto-flow: row;
+            grid-auto-columns: 1fr;
+
+            
             gap: 35px;
-            grid-auto-rows: 100px;
+            grid-auto-rows: 1fr;
 
            /* align-items: stretch;
             justify-items: normal; (Simplificação com shorthand)*/
-            place-items: start center;
+            place-items: normal normal;
            /* align-content: center;
             justify-content: center; (Simplificação com shorthand)*/
-            place-content: space-between end;
+            place-content: normal normal;
     
         }
 
