@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        div.container {
+            background-color: lightsalmon;
+            display: flex; /* Ativa o Flexbox */
+            flex-flow: row nowrap;
+        }
+        div.item {
+            background-color: blue;
+            border: 1px solid black;
+            flex-basis: 350px;
+            flex-shrink: 1;
+            flex-grow: 1;
+            padding: 10px;
+            text-align: center;
+        }
+div#i1 {
+            background-color: red;
+            flex-basis: 200px;
+            flex-shrink: 1;
+            flex-grow: 1;
+
+        }
+div#i2 {
+            background-color: orange;
+            flex-basis: 200px;
+            flex-shrink: 2;
+            flex-grow: 4;
+        }
+div#i3 {
+            background-color: green;
+            flex-basis: 200px;
+            flex-shrink:1 ;
+            flex-grow: 2;
+        }
+div#i4 {
+            background-color: purple;
+            flex-basis: 200px;
+            flex-shrink: 1;
+            flex-grow: 0;
+        }
+div#i5 {
+            background-color: yellow;
+            flex-basis: 200px;
+            flex-shrink:1 ;
+            flex-grow: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Olá Mundo!</h1>
+    <h2>Aprendendo flexbox</h2>
+    <div class="container"> <!-- Container principal ou Elemento Pai -->
+        <div class="item" id="i1">A</div>
+        <div class="item" id="i2">B</div>
+        <div class="item" id="i3">C</div>
+        <div class="item" id="i4">D</div>
+        <div class="item" id="i5">E</div>
+
+     
+       
+        
+
+    </div>
+</body>
+</html>
