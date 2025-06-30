@@ -16,7 +16,7 @@ div.caixa1 {
     grid-row-start:1 ;
     grid-row-end:2 ;
     grid-column-start:1 ;
-    grid-column-end:-1;
+    grid-column-end:5;
 }
 div.caixa2 {
    
