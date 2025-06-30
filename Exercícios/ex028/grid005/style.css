@@ -4,7 +4,7 @@ div.container {
     display: grid;
     border: 1px solid black;
     grid-template: repeat(3, 100px) / repeat(4, 1fr);
- 
+    gap: 5px;
     
     padding: 10px;
 }
